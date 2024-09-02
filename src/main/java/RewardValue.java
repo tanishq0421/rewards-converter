@@ -2,16 +2,16 @@ package main.java;
 
 public class RewardValue {
     private double cashValue;
-    private double mileValue;
+    private int  mileValue;
 
     // Constructor for cash value
     public RewardValue(double cashValue) {
         this.cashValue = cashValue;
-        this.mileValue = cashValue / 0.0035; // Convert cash to miles
+        this.mileValue = (int)(cashValue / 0.0035); // Convert cash to miles
     }
 
     // Constructor for mile value
-    public RewardValue(double mileValue, boolean isMiles) {
+    public RewardValue(int mileValue) {
         this.mileValue = mileValue;
         this.cashValue = mileValue * 0.0035; // Convert miles to cash
     }
