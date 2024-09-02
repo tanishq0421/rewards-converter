@@ -5,3 +5,5 @@ target/
 
 # Ignore library dependencies
 /lib/
+
+src/bin/
